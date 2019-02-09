@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Katherine Aguilera</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		 <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+			<link href="fonts/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name="title" content="Portafolio Katherine Aguilera" />
+	        <meta name="description" content="Dar a conocer portafolio, conocimientos y trabajos realizados" />
+	        <meta name="keywords" content="Katherine, Aguilera, Portafolio" />
+		<meta charset="UTF-8" />
+		<meta name="google-site-verification" content="BSNPqKX-OXl67cOwfFYZKlyZrZHPQtZJeb8b2dmFVuY" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+							<div class="logo">
+									<img src="images/logo1.png" width="180px" height= "65px"/>
+								</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="#home" class="scroll">Inicio</a><span> </span></li>
+								<li><a href="#about" class="scroll">Sobre mí</a></li>
+								<li><a href="#work" class="scroll">Portafolio</a><span> </span></li>
+								<li><a href="#contact" class="scroll">Contactame</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----banner---->
+			<div class="banner">
+				<!--- banner-info ---->
+				<div class="banner-info">
+					<img class="foto" src="images/kty.png"/><span>Katherine Aguilera</span>
+					<div class="clearfix"> </div>
+					<a class="bannner-btn icon-twitter" href="https://twitter.com/ktyagui" target="_blank">Sigueme</a>
+				</div>
+				<!-- //banner-info ---->
+			</div>
+			<!--//banner---->
+			<!---- about --->
+			<div id="about" class="about">
+				<div class="about-head text-center">
+					<div class="container">
+						<h2>SOBRE MÍ</h2>
+						<span> </span>
+						<p>Soy <strong>Ingeniera de Sistemas</strong>, me encanta la tecnología y aprender día a día  aplicandolo a mi vida profesional. <strong> Mis habilidaes y conocimientos:</strong></p>
+					</div>
+				</div>
+				<!--- about-grids --->
+				<div class="about-grids text-center">
+					<div class="container">
+						<div class="col-md-3 about-grid">
+							<span class="light-icon"> </span>
+							<h3>Análisis y Documentación</h3>
+							<p>Levantamiento de requerimientos, metodologías agiles SCRUM, UML, Casos de uso, diagramación de flujo de datos, Documentación de procesos y proyectos,Experiencia en el manejo de personas para asesorías y enseñanza en áreas de sistemas y diseño.</p>
+							<label> </label>
+						</div>
+						<div class="col-md-3 about-grid">
+							<span class="pen-icon"> </span>
+							<h3>Desarrollo Front end</h3>
+							<p>HTML5, CSS3, JavaScript, jquery, Responsive design, PhoneGap, jQuery mobile, stylus, Gulp, Bootstrap. Manejo de Google tag manager</p>
+							<label> </label>
+						</div>
+						<div class="col-md-3 about-grid">
+							<span class="cog-icon"> </span>
+							<h3>Desarrollo Back end</h3>
+							<p>Java, PHP, C++, MySql, SqlServer, Laravel, BigQuery</p>
+							<label> </label>
+						</div>
+						<div class="col-md-3 about-grid">
+							<span class="mon-icon"> </span>
+							<h3>Soporte y Pruebas</h3>
+							<p>Soporte a usuarios, mantenimiento y soporte de software, hardware y aplicaciones, Pruebas con la metodología TDD, habilidades en instalación y mantenimiento de sistemas operativos Windows</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!--- about-grids --->
+			</div>
+			<!----//about --->
+
+			<!---- works ---->
+			<div id="work" class="works">
+				<div class="conatiner">
+					<div class="works-head text-center">
+						<h2>PORTAFOLIO</h2>
+						<span> </span>
+						<p>Estos son algunos de mis proyectos realizados</p>
+					</div>
+				</div>
+					<!---works-grids--->
+			 <div class="works-grids">
+			 	   <div class="works-grid col-md-4">
+	              <img src="images/apivueP.png" title="Api Music" />
+	              <div class="caption">
+	                <h4>Api Music</h4>
+	                <p>App de buscar y reproducir musica realizada con Vue.js</p>
+	                <a class="demo" target="_blank" href="https://music-cwsodyikpe.now.sh/">Ver link</a>
+	              </div>
+	            </div>
+			 	 <div class="works-grid col-md-4">
+		          <img src="images/redux.png" title="Reproductor hecho con react" />
+		          <div class="caption">
+		            <h4>Reproductor React-Redux</h4>
+		            <p>Construccion de reproductor de videos realizado con rect.js y redux</p>
+		            <a class="demo" target="_blank" href="https://katherinaguilera.github.io/redux/">Ver link</a>
+		          </div>
+		        </div>
+		        	<div class="works-grid col-md-4">
+					<img src="images/pirlov.png" title="Landing Page"/>
+					<div class="caption">
+						<h4>Pirlov Ecommerce</h4>
+						<p>Pirlov Ecommerce</p>
+						<a class="demo" target="_blank" href="http://www.prilov.com/">Ver link</a>
+					</div>
+				</div>
+		        <div class="works-grid col-md-4">
+		          <img src="images/beauty.png" title="Template JsBeauty" />
+		          <div class="caption">
+		            <h4>JsBeauty</h4>
+		            <p>Template JsBeauty</p>
+		            <a class="demo" target="_blank" href="https://katherinaguilera.github.io/TemplateJSBeauty/">Ver link</a>
+		          </div>
+		        </div>
+			
+				<div class="works-grid col-md-4">
+					<img src="images/video.png" title="Landin Play video" />
+
+					<div class="caption">
+						<h4>Landing Play Video</h4>
+						<p>Play Video Maquetacion.</p>
+						<a class="demo" target="_blank" href="https://katherinaguilera.github.io/PlayVideo/">Ver link</a>
+				   </div>
+               </div>
+		        <div class="works-grid col-md-4">
+		          <img src="images/apivue.png" title="Api Music" />
+		          <div class="caption">
+		            <h4>Last.fm Api</h4>
+		            <p>App que mostrara de acuerdo a la api de last.fm el top de musica de acuerdo al pais seleccionado.</p>
+		            <a class="demo" target="_blank" href="https://katherinaguilera.github.io/PlayMusicVue/">Ver link</a>
+		          </div>
+		        </div>
+		        	<div class="works-grid col-md-4">
+					<img src="images/anime.png" title="Anime" />
+					<div class="caption">
+						<h4>Series Anime</h4>
+						<p>Ver Series Anime</p>
+						<a class="demo" target="_blank" href="https://katherinaguilera.github.io/anime/">Ver link</a>
+				   </div>
+           	   </div>
+				<div class="works-grid col-md-4">
+					<img src="images/landingpage.png" title="Landing Page" />
+					<div class="caption">
+						<h4>Landing Page Tita</h4>
+						<p>Landing Page para Tita Media.</p>
+						<a class="demo" target="_blank" href="https://katherinaguilera.github.io/landingTita">Ver link</a>
+					</div>
+				</div>
+
+				<div class="works-grid col-md-4">
+					<img src="images/cat.jpg" title="name" />
+					<div class="caption">
+					<h4>Gatos y Perros de Internet</h4>
+						<p>Aplicación web que muestra los gatos y perros mas famosos de internet.</p>
+						<a class="demo" target="_blank" href="http://katherinaguilera.github.io/GatosyPerrosFamosos/">Ver link</a>
+					</div>
+				</div>
+				<div class="works-grid col-md-4">
+					<img src="images/drypers.jpg" title="name" />
+					<div class="caption">
+					<h4>Drypers Andina</h4>
+						<p>Página web de la empresa Drypers. Desarrollo</p>
+						<a class="demo" target="_blank" href="http://protisa.co/sites-protisacol2020/drypersco/">Ver link</a>
+					</div>
+				</div>
+				<div class="works-grid col-md-4">
+					<img src="images/protisas.png" title="name" />
+					<div class="caption">
+					<h4>Informes Coorporativos</h4>
+						<p>Aplicación en PHP para consultar informes en el área administrativa. Desarrollo y diseño.</p>
+					</div>
+				</div>
+				<div class="works-grid col-md-4"> 
+					<img src="images/champions.png" title="name" />
+					<div class="caption">
+						<h4>Especial Champions League</h4>
+						<p> Para Semana.com</p> 
+						<a class="demo" target="_blank" href="http://especiales.semana.com/champions-league/index.html">Ver link</a> 
+					</div>
+				</div>
+				<div class="works-grid col-md-6"> 
+					<img src="images/minas.png" title="name" />
+					<div class="caption">
+						<h4>Especial Minas antipersonales</h4>
+						<p> Para Semana.com</p> 
+						<a class="demo" target="_blank" href="http://especiales.semana.com/minas-antipersonales/">Ver link</a> 
+					</div>
+				</div>
+			     <div class="works-grid col-md-4">
+			        <img src="images/tumaco.png" title="name" />
+			        <div class="caption">
+			          <h4>Especial Tumaco</h4>
+			          <p> Para Semana.com</p>
+			          <a class="demo" target="_blank" href="http://especiales.semana.com/tumaco/index.html">Ver link</a>
+			        </div>
+			    </div>
+		         <div class="works-grid col-md-4">
+		            <img src="images/serpilo.png" title="name" />
+		            <div class="caption">
+		              <h4>Especial SerPilo paga</h4>
+		              <p> Para Semana.com</p>
+		              <a class="demo" target="_blank" href="http://especiales.semana.com/ser-pilo-paga/index.html">Ver link</a>
+		            </div>
+		         </div>
+		         	<div class="works-grid col-md-6">
+					<img src="images/cmpc.png" title="name" />
+					<div class="caption">
+					<h4>Pagina web Cmpc Tissue</h4>
+						<p>Pagina web CMPC Tissue.</p>
+						<a class="demo" target="_blank" href="http://www.cmpctissue.com/index.php">Ver link</a>
+					</div>
+				</div>
+				 <div class="works-grid col-md-6">
+						<img src="images/pduque.png" title="Duque travel's"/>
+						<div class="caption">
+							<h4>Duque Travel's</h4>
+							<p>Aplicación móvil para parque turístico. Diseño y desarrollo.</p>
+							<a class="demo" target="_blank" href="http://katherinaguilera.github.io/DuqueTravels/assets/">Ver link</a>
+						</div>
+				 </div>
+				<div class="clearfix"> </div>
+			</div>
+
+					<!--//works-grids--->
+					</div>
+			<!----//works ---->
+			<!---- contact ----->
+			<div id="contact" class="contact">
+				<div class="conatiner">
+					<div class="contact-head text-center">
+							<h2>CONTÁCTAME</h2>
+							<span> </span>
+							<p>Encuantrame en mis redes sociales.</p>
+							<a href="https://twitter.com/ktyagui" target="_blank"><img src="images/twitter.png" /></a>
+							<a href="https://co.linkedin.com/in/katherineaguileram" target="_blank"><img src="images/linkendin.jpg" /></a>
+							<a href="https://www.facebook.com/ktyagui" target="_blank"><img src="images/facebook.png" /></a>
+					</div>
+				</div>
+				<!----Contact-form---->
+				<div class="Contact-form">
+					<div class="send-form text-center">
+						<form action="enviar.php" method="post">
+							<span class="text-box1">
+								<label>Nombre</label>
+								<input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+							</span>
+							<span class="text-box2">
+								<label>Correo eléctronico</label>
+								<input type="email" name="email" placeholder="Ingresa tu correo" required>
+							</span>
+							<span class="text-box3">
+								<label>Mensaje</label>
+								<textarea name="mensaje" placeholder="Escribe tu mensaje! :)"></textarea>
+							</span>
+							<div class="clearfix">
+							<input type="submit" value="Enviar"  />
+						</form>
+					</div>
+				</div>
+				<!----Contact-form---->
+			</div>
+			<!----//contact ----->
+			<!----copy-right---->
+			<div class="copy-right text-center">
+				<div class="container">
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+					<h4><strong>Katherine Aguilera 2017 </strong></h4>
+				</div>
+			</div>
+			<!---//copy-right---->
+	</body>
+</html>
